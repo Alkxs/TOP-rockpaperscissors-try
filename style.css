@@ -1,2 +1,201 @@
-* {
+/* - Mobile: 375px
+- Desktop: 1366px */
+/*  Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 600, 700 */
+
+/* RESET CSS */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #1f3757;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: fixed;
+}
+.scoreboard {
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: white solid 1px;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  margin: 15rem auto;
+  width: 60%;
+}
+.title {
+  padding: 1rem;
+}
+.score-panel {
+  background-color: rgb(235, 233, 233);
+  width: 15rem;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+.vs-label {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.score-label {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  padding-top: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.userscore {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 4rem;
+}
+.pcscore {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 4rem;
+}
+/* main section */
+.main {
+  width: 50rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(images/triangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hand {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#paper {
+  margin-right: 5rem;
+}
+.hand:hover {
+  transform: translateY(-1rem);
+}
+.fadeout {
+  opacity: 0;
+  pointer-events: none;
+}
+.fadein {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* contest view */
+.battle {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(-35rem);
+}
+.llabel {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.decision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.display-winner {
+  color: white;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.play-again {
+  border-radius: 5%;
+  background-color: rgb(235, 235, 235);
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.play-again:hover {
+  background-color: rgba(80, 26, 26, 0.701);
+  color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 800px) {
+  .scoreboard {
+    margin: 15rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .title {
+    margin: 0;
+    padding: 0;
+  }
+  .title > img {
+    width: 10rem;
+  }
+  .score-panel {
+    padding: 0.2rem;
+    width: 10rem;
+    height: 5rem;
+  }
+  .vs-label {
+    width: 5rem;
+  }
+  .score-label {
+    font-style: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1;
+  }
+  .userscore {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .pcscore {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    margin-top: 10rem;
+    padding: 0;
+  }
+  .hand {
+    padding: 1rem;
+  }
+  .hand > img {
+    width: 15rem;
+  }
+  .display-winner {
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
 }

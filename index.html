@@ -5,10 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
-    jsljfsjfkl
+    <div class="container">
+      <header class="scoreboard">
+        <div class="title">
+          <img src="images/title.png" alt="logo title" />
+        </div>
+        <div class="score-panel">
+          <p class="score-label">User</p>
+          <h2 class="userscore">0</h2>
+        </div>
+        <p class="vs-label">score</p>
+        <div class="score-panel">
+          <p class="score-label">PC</p>
+          <h2 class="pcscore">0</h2>
+        </div>
+      </header>
+      <main class="main">
+        <div id="paper" class="hand">
+          <img src="images/Paper.png" alt="paper" />
+        </div>
+        <div id="scissors" class="hand">
+          <img src="images/Scissors.png" alt="scissors" />
+        </div>
+        <div id="rock" class="hand">
+          <img src="images/Rock.png" alt="rock" />
+        </div>
+      </main>
+      <section class="battle fadein">
+        <div class="userChoice">
+          <h2 class="llabel">USER</h2>
+          <img class="battleUserImg" src="images/Scissors.png" alt="scissors" />
+        </div>
+        <div class="decision">
+          <h1 class="display-winner">You win</h1>
+          <button class="play-again">Play again</button>
+        </div>
+        <div class="computerChoice">
+          <h2 class="llabel">PC</h2>
+          <img class="battlePcImg" src="images/Scissors.png" alt="scissors" />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
