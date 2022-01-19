@@ -1,7 +1,7 @@
 Rock Paper Scissors
 
  Built from scratch using the problem-solving paradigm to practice DOM manipulation in JavaScript. 
- Adpated from https://www.frontendmentor.io/ foloowing the curriculum on https://www.theodinproject.com/
+ Adpated from https://www.frontendmentor.io/ following the curriculum on https://www.theodinproject.com/
  
  You can find the Demo version at the following link:
  
